@@ -17,6 +17,9 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON)
 set(CMAKE_C_STANDARD 90)
 
+set(CMAKE_SYSTEM_NAME Android)
+
+
 cmake_dependent_option(LIBUV_BUILD_TESTS
   "Build the unit tests when BUILD_TESTING is enabled and we are the root project" ON
   "BUILD_TESTING;CMAKE_SOURCE_DIR STREQUAL PROJECT_SOURCE_DIR" OFF)
